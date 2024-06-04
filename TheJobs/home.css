@@ -1,0 +1,327 @@
+
+
+/* CSS Document */
+
+
+
+body {
+    background-color: #282c2f;
+    background-size: 2500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    font-family: "robot";
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Berlin Sans FB";
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: "Berlin Sans FB";
+    margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: rgb(49, 37, 217);
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(74, 73, 73);
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/* home section */
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-wrap: wrap;
+    background:url("2.jpg")no-repeat;
+    background-size:  100%;
+    background-position: top;
+    padding:1.5rem 7%;
+    padding-top: 4rem;
+    text-align: left;
+}
+
+
+.home .content{
+    flex:1 1 40rem;
+    padding-top: 5rem;
+}
+
+.home .content h1{
+    font-size: 4rem;
+    color:rgb(43, 40, 40);
+    align-items: left;
+    text-align: left;
+}
+
+.home .content p{
+    font-size: 1.8rem;
+    color:rgb(80, 70, 70);
+    padding:.5rem 0;
+}
+
+.home .content .btn{
+    
+    align-items: left;
+
+}
+
+/* button */
+
+.btn {
+    font-size: 2rem;
+    padding: .7rem 3.5rem;
+    border-radius: 5rem;
+    color: #000;
+    background: var(--blue);
+    background-color: #fff;
+    margin-top: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(79, 69, 222);
+    z-index: -1;
+    transition: .2s linear;
+}
+
+.btn:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+/* boxes */
+
+.container{
+
+	position: relative;
+	width:1400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+	margin-top: 8%;
+}
+
+.container .card{
+	width:308px;
+	position: relative;
+	height: 400px;
+	background: #f0f0f0;
+	margin:30px 10px;
+	padding: 20px 15px;
+	display:flex;
+	flex-direction: column;
+	box-shadow: 0.5px 10px #e6e6e6;
+	transition:0.3s ease-in-out;
+	margin-top: 5%;
+}
+.container .card .imgBx{
+	position: relative;
+	width:260px;
+	height: 260px;
+	top: -60px;
+	left:20px;
+	box-shadow: 0 5px 20px rbga (0,0,0,1.2);
+
+}
+
+.container .card .imgBx img
+{
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+.imgBx:hover img{
+	transform: scale(1.1);
+}  
+
+h4 {
+    color: #fff;
+    text-align: 100px;
+    font-family: "lato";
+    text-align: center;
+    font-size: 40px;
+}
+
+.p1{
+	text-align: justify;
+	
+}
+
+/* footer */
+
+
+.footer1{
+    background:#eee;
+}
+
+.footer1 .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer1 .box-container .box{
+    flex:1 1 30rem;
+    margin:2rem;
+}
+
+.footer1 .box-container .box h3{
+    font-size: 2rem;
+    color: rgb(74, 36, 209);
+}
+
+.footer1 .box-container .box p{
+    font-size: 1.5rem;
+    color:#333;
+    padding:0.5rem 0;
+}
+
+.footer1 .box-container .box{
+    text-align: justify, right;
+}
+
+/* footer end */
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+  
